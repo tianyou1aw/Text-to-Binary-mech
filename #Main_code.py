@@ -11,12 +11,12 @@ def Binary():
         id = ord(letter)
         binary_letter = format(id, '08b')
         final_result = final_result + binary_letter + " "
-        thelabel.config(text=f"{final_result}")
+        MainLabel.config(text=f"{final_result}")
 
 
 root = tk.Tk()
-thelabel = tk.Label(root, text=f"")
-label = tk.Label(root, text=f"Text to Binary")
+MainLabel = tk.Label(root, text=f"")
+Title = tk.Label(root, text=f"Text to Binary")
 Entry = tk.Entry(root)
 Button = tk.Button(root, text=f"Turn to Binary", command=Binary)
 
@@ -26,5 +26,5 @@ Button = tk.Button(root, text=f"Turn to Binary", command=Binary)
 
 Entry.pack()
 Button.pack()
-thelabel.pack()
+MainLabel.pack()
 root.mainloop()
