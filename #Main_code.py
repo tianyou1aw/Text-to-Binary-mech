@@ -1,7 +1,5 @@
 #Main_code.py
 import tkinter as tk
-import random
-import time
 
 def Binary():
     global final_result
@@ -22,7 +20,7 @@ Button = tk.Button(root, text=f"Turn to Binary", command=Binary)
 
 
 
-
+Title.pack()
 
 Entry.pack()
 Button.pack()
